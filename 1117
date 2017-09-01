@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main{
+	public static void main(String[] args){
+	    PrintStream sa=System.out;
+        Scanner sc = new Scanner(System.in);
+        int x=0;
+        double m,a,b=0;
+        while(x<2){
+            a = sc.nextDouble();
+            if(a>=0 && a<=10.0){
+                x++;
+                b+=a;
+            }else sa.printf("nota invalida\n");
+        }
+        m = b/2.0;
+        sa.printf("media = %.2f\n",m);
+	}
+}
