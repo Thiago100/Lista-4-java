@@ -1,0 +1,14 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+		PrintStream sa = System.out;
+		Scanner sc = new Scanner(System.in);
+		int x=0,a = sc.nextInt(),n = sc.nextInt(),s = n-a,l=0;
+		while(l<n){
+		x++;
+		l+=s;
+		}sa.println(x);
+		     
+   }
+}
