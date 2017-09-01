@@ -1,0 +1,16 @@
+import java.util.*;
+import java.io.*;
+public class Main{
+	public static void main(String[] args){
+        PrintStream sa = System.out;
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt(),y = sc.nextInt();
+        while(x!=y){
+            if(x<y) sa.println("Crescente");
+            else sa.println("Decrescente");
+            x = sc.nextInt();y = sc.nextInt();
+        }
+
+
+	}
+}
