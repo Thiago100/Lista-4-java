@@ -1,0 +1,16 @@
+import java.util.*;
+import java.io.*;
+public class Main{
+	public static void main(String[] args){
+        PrintStream sa = System.out;
+        Scanner sc = new Scanner(System.in);
+        int x;
+        while(sc.hasNext()){
+            x = sc.nextInt();
+            if(x==0) sa.println("vai ter copa!");
+            else sa.println("vai ter duas!");
+        }
+
+
+	}
+}
