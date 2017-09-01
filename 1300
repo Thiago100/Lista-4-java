@@ -1,0 +1,15 @@
+import java.util.*;
+import java.io.*;
+public class Main {
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		PrintStream sa = System.out;
+        while(sc.hasNext()){
+            int x = sc.nextInt();
+            if(x%6==0) sa.println("Y");
+            else sa.println("N");
+
+        }
+
+	}
+ }
