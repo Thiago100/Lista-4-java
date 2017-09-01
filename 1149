@@ -1,0 +1,16 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+		PrintStream sa = System.out;
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt(),n = sc.nextInt(),soma=a,i=1;
+		while(n<=0) n = sc.nextInt();
+		while(i<n){
+			a++;
+			soma+=a;
+			i++;
+		}sa.println(soma);
+		     
+   }
+}
