@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main{
+	public static void main(String[] args){
+	    PrintStream sa=System.out;
+        Scanner sc = new Scanner(System.in);
+        int x=sc.nextInt(),i=0,l=0;
+        while(x!=0){
+            while(i<5){
+                if(x%2==0){
+                    l+=x;
+                    i++;
+                }
+                x++;
+            }
+            sa.println(l);
+            l=0;i=0;
+            x = sc.nextInt();
+        }
+
+	}
+}
