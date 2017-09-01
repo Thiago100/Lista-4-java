@@ -1,0 +1,21 @@
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) throws IOException {
+        PrintStream sa = System.out;
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(),x=0;
+        double a;
+        for(int i=0;i<n;i++){
+            a = sc.nextDouble();
+            while(a>1){
+                a/=2;
+                x++;
+            }
+            sa.println(x+" dias");
+            x = 0;
+        }
+
+	}
+}
