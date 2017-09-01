@@ -1,0 +1,15 @@
+import java.util.*;
+import java.io.*;
+// sc.hasNextInt() //EOF
+public class Main{
+	public static void main(String[] args){
+        PrintStream sa = System.out;
+        Scanner sc = new Scanner(System.in);
+        while(sc.hasNextInt()){
+            int a = sc.nextInt();
+            sa.println(a-1);
+        }
+
+
+	}
+}
