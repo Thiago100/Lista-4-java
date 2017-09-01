@@ -1,0 +1,16 @@
+import java.util.*;
+import java.io.*;
+// sc.hasNextInt() //EOF
+public class Main{
+	public static void main(String[] args){
+        PrintStream sa = System.out;
+        Scanner sc = new Scanner(System.in);
+        while(sc.hasNextInt()){
+            long a = sc.nextLong(),b = sc.nextLong();
+            sa.println((a*2)*b);
+
+        }
+
+
+	}
+}
