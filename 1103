@@ -1,0 +1,26 @@
+import java.util.*;
+import java.io.*;
+public class Main {
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		PrintStream sa = System.out;
+        int x=0;
+        int H1 = sc.nextInt(),M1 = sc.nextInt(),H2 = sc.nextInt(),M2 = sc.nextInt(),M;
+        while(x!=1){
+            if(H2>H1){
+                M = (H2*60+M2)-(H1*60+M1);
+                sa.printf("%d\n",M);
+            }else if(H2==H1 && M1<M2){
+                M = (M2-M1);
+                sa.printf("%d\n",M);
+            }else{
+                M = (24*60)-(H1*60+M1)+H2*60+M2;
+                sa.printf("%d\n",M);
+            }
+            M=0;
+            H1 = sc.nextInt();M1 = sc.nextInt();H2 = sc.nextInt();M2 = sc.nextInt();
+            if(H1==0 && M1==0 && H2==0 && M2==0) x++;
+        }
+
+	}
+ }
