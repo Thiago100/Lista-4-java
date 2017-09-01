@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+		PrintStream sa = System.out;
+		Scanner sc = new Scanner(System.in);
+		int m=1,n=1,i=0,j=0;
+		while(m!=0 && n!=0){
+			m=sc.nextInt();n=sc.nextInt();
+			if(m!=0 && n!=0){
+				if(m>0 && n>0) sa.println("primeiro");
+				if(m<0 && n>0) sa.println("segundo");
+				if(m<0 && n<0) sa.println("terceiro");
+				if(m>0 && n<0) sa.println("quarto");
+			}
+		}
+		     
+   }
+}
