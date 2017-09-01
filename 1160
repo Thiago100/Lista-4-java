@@ -1,0 +1,27 @@
+import java.util.*;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+		PrintStream sa = System.out;
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt(),pa,pb,anos=0;
+		double g1,g2,x1,x2;
+		for(int i=0;i<n;i++){
+			pa = sc.nextInt();pb = sc.nextInt();
+			g1 = sc.nextDouble();g2 = sc.nextDouble();
+			g1/=100;g2/=100;
+			while(pa<=pb){
+				pa+=pa*g1;
+				pb+=pb*g2;
+				anos++;
+				if(anos>100){
+					sa.println("Mais de 1 seculo.");
+					break;
+				}
+			}
+			if(anos<=100) sa.println(anos+" anos.");
+			anos = 0;
+		}
+
+   }
+}
