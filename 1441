@@ -1,0 +1,23 @@
+import java.util.*;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+		PrintStream sa = System.out;
+		Scanner sc = new Scanner(System.in);
+		long x = sc.nextLong(),maior = x;
+		while(x!=0){
+			if(x%2==0) x/=2;
+			else if(x%2==1 && x!=1) x = 3*x+1;
+			if(x>maior) maior = x;
+			while(x>1){
+				if(x%2==0) x/=2;
+				else x = 3*x+1;
+				if(x>maior) maior = x;
+			}
+			sa.println(maior);
+			x = sc.nextLong();
+			maior = x;
+		}
+		     
+   }
+}
