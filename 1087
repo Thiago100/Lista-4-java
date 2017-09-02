@@ -1,0 +1,22 @@
+import java.util.*;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+		PrintStream sa = System.out;
+		Scanner sc = new Scanner(System.in);
+		int X1, Y1, X2, Y2,res,res2;
+		X1 = sc.nextInt();Y1 = sc.nextInt();X2 = sc.nextInt();Y2 = sc.nextInt();
+		while(X1 != 0 && Y1 != 0 && X2 != 0 && Y2 != 0){
+			if(X1 == X2 && Y1 == Y2) sa.printf("0\n");
+			else if(X1 == X2 || Y1 == Y2) sa.printf("1\n");
+			else{
+				res = Math.abs(X1 - X2);
+				res2 = Math.abs(Y1 - Y2);
+				if(res - res2 == 0) sa.printf("1\n");
+				else sa.printf("2\n");
+			}
+			X1 = sc.nextInt();Y1 = sc.nextInt();X2 = sc.nextInt();Y2 = sc.nextInt();
+		}
+		     
+   }
+}
