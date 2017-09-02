@@ -1,0 +1,16 @@
+import java.util.*;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+		PrintStream sa = System.out;
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt(),p=2,t=1;
+		while(p!=1){
+      if(p <= n/2) p += p;
+			else p -= (n - p + 1);
+			t++;
+		}sa.println(t);
+
+
+   }
+}
