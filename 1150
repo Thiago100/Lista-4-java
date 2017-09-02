@@ -1,0 +1,15 @@
+import java.util.*;
+import java.io.*;
+public class Main {
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		PrintStream sa = System.out;
+        int x = sc.nextInt(),z = sc.nextInt(),i=0,r=x,j=0;
+        if(z<=x) while(z<=x) z = sc.nextInt();
+        while(j<z){
+            j+=r;
+            r++;
+            i++;
+        }sa.println(i);
+	}
+ }
